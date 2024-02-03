@@ -25,6 +25,16 @@ body::-webkit-scrollbar {
     color: #ffffff !important;
 }
 
+div#daftar-ucapan {
+    display: none;
+
+}
+
+p.p-memories {
+    size: 1.2rem;
+    text-align: center;
+}
+
 .img-crop {
     width: 14rem;
     height: 14rem;
@@ -63,6 +73,20 @@ img#bg-gemes {
 
 .card-body {
     overflow-wrap: break-word !important;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 10px;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    padding: 0px;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
 }
 
 .mouse-animation {
@@ -120,6 +144,6 @@ footer {
 }
 
 img#gemes2 {
-    margin: -110px;
+    margin: -90px;
 }
 

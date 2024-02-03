@@ -1,16 +1,17 @@
 // OK
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var nomor = ('628970771054');
+    var pesan = encodeURIComponent(document.getElementById('pesan').value);
+
+    var link = `https://api.whatsapp.com/send?phone=${nomor}&text=${pesan}`;
+
+    window.open(link, '_blank');
+});
+
 const storage = (table) => {
 
-    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-    
-        var nomor = ('628970771054');
-        var pesan = encodeURIComponent(document.getElementById('pesan').value);
-    
-        var link = `https://api.whatsapp.com/send?phone=${nomor}&text=${pesan}`;
-    
-        window.open(link, '_blank');
-    });
 
     if (!localStorage.getItem(table)) {
         localStorage.setItem(table, JSON.stringify({}));
@@ -326,7 +327,7 @@ const audio = (() => {
 
 const pagination = (() => {
 
-    const perPage = 10;
+    const perPage = 24;
     let pageNow = 0;
     let resultData = 0;
 
